@@ -4,7 +4,7 @@
 struct world {
     double x;
     double y;
-    double playerPos;
+    Player* playerPos;
 };
 
 #endif
