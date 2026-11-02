@@ -2,9 +2,7 @@
 
 **SkateBoardZ** is a lightweight skateboard game written in C.
 
-The project is built around a simple idea: take a skateboarder, put them in a playable environment, and turn movement, tricks, momentum, and timing into the core of the game.
-
-Rather than trying to build a massive game engine, SkateBoardZ focuses on understanding and implementing the fundamental pieces of a game from the ground up.
+The project is built around a simple, fun idea: take a skateboarder, put them in a playable environment, and turn movement, tricks, momentum, and timing into the core of the game.
 
 ## Overview
 
@@ -12,7 +10,7 @@ SkateBoardZ is a side-scrolling skateboard game in which the player controls a s
 
 The player can move through the level, perform skateboard tricks, and interact with the movement and timing systems that make up the game.
 
-The project is primarily an exploration of:
+The project consists as an exploration of:
 
 * Game loops
 * Player movement
@@ -26,7 +24,7 @@ The project is primarily an exploration of:
 * Audio
 * Level structure
 
-The goal is not simply to make something that displays a skateboarder on a screen. The goal is to understand how the individual systems of a game fit together to produce an interactive world.
+The goal is to produce an enjoyable interactive skateboarding world.
 
 ---
 
@@ -36,9 +34,7 @@ The basic game takes place in a horizontally oriented environment.
 
 The skateboarder begins on the left side of the level and progresses toward the right. Along the way, the player can interact with the environment and perform tricks.
 
-Movement and tricks are connected to timing. A successful trick is therefore more than simply pressing a button: the player must understand the relationship between movement, input, and the current state of the skateboarder.
-
-The game is intentionally small in scope so that its systems can be understood and developed individually.
+Movement and tricks are connected to timing. The player must understand the relationship between movement, input, and the current state of the skateboarder in order to perform tricks and move fluidly.
 
 ---
 
@@ -62,7 +58,7 @@ As the project develops, this basic loop can support additional mechanics such a
 
 The player controls a skateboarder moving through the game world.
 
-The skateboarder's state can potentially include information such as:
+The skateboarder's state will include information such as their:
 
 * Position
 * Velocity
@@ -82,8 +78,6 @@ The player system is responsible for translating input into changes in the skate
 
 Movement is one of the fundamental systems of SkateBoardZ.
 
-The skateboarder should be able to travel through the environment while maintaining a meaningful relationship between input, velocity, and position.
-
 Potential movement mechanics include:
 
 * Forward movement
@@ -102,7 +96,7 @@ The exact implementation of these mechanics will depend on the game's evolving d
 
 Tricks are one of the defining mechanics of SkateBoardZ.
 
-A trick represents a temporary action performed by the skateboarder rather than ordinary movement.
+A trick is a temporary action performed by the skateboarder.
 
 The game can use combinations of:
 
@@ -114,8 +108,6 @@ The game can use combinations of:
 * Trick duration
 
 to determine whether a trick is successfully performed.
-
-The trick system should ultimately make it possible to add new tricks without having to rebuild the entire game.
 
 ---
 
