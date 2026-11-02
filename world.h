@@ -4,8 +4,6 @@
 struct world {
     double x;
     double y;
-    double dx;
-    double dy;
     double playerPos;
 };
 
