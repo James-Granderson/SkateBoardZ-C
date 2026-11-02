@@ -4,7 +4,6 @@
 struct player1 {
     double x;
     double y;
-    double z;
 };
 
 #endif
